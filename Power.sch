@@ -1,0 +1,361 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SMPS_Regulators:LM2678 U1
+U 1 1 5FB73DAC
+P 4800 2500
+F 0 "U1" H 4750 3065 50  0000 C CNN
+F 1 "LM2678" H 4750 2974 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-7_TabPin4" H 4750 2350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm2678.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1593135200173" H 4750 2350 50  0001 C CNN
+F 4 "Texas Instruments" H 4800 2500 50  0001 C CNN "Manufacturer_Name"
+F 5 "LM2678SX-5.0" H 4800 2500 50  0001 C CNN "Manufacturer_Part_Number"
+	1    4800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5FB747E6
+P 5950 2500
+F 0 "C8" V 5698 2500 50  0000 C CNN
+F 1 "10nF" V 5789 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5988 2350 50  0001 C CNN
+F 3 "~" H 5950 2500 50  0001 C CNN
+F 4 "KEMET" H 5950 2500 50  0001 C CNN "Manufacturer_Name"
+F 5 "C0805C103K1RACTU" H 5950 2500 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5950 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5FB755A2
+P 6850 2950
+F 0 "L1" V 7040 2950 50  0000 C CNN
+F 1 "15uH" V 6949 2950 50  0000 C CNN
+F 2 "Inductors:Coilcraft_MSS1210" H 6850 2950 50  0001 C CNN
+F 3 "http://www.coilcraft.com/pdfs/mss1210.pdf" H 6850 2950 50  0001 C CNN
+F 4 "" V 6850 2950 50  0001 C CNN "MFG Part"
+F 5 "MSS1210-153MEB" H 6850 2950 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "Coilcraft" H 6850 2950 50  0001 C CNN "Manufacturer_Name"
+	1    6850 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 2950 5600 2950
+Wire Wire Line
+	5500 2500 5800 2500
+Wire Wire Line
+	6100 2500 6250 2500
+Wire Wire Line
+	6250 2500 6250 2950
+Connection ~ 6250 2950
+Wire Wire Line
+	6250 2950 6700 2950
+Wire Wire Line
+	5500 2200 7150 2200
+Wire Wire Line
+	7150 2200 7150 2950
+Wire Wire Line
+	7150 2950 7000 2950
+$Comp
+L Device:D_Schottky_AKA D2
+U 1 1 5FB772D7
+P 5600 3350
+F 0 "D2" V 5579 3494 50  0000 L CNN
+F 1 "SBRD10200" V 5670 3494 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 5600 3350 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/SBRD10200%20N1314%20REV.-.pdf" H 5600 3350 50  0001 C CNN
+F 4 "SMC" H 5600 3350 50  0001 C CNN "Manufacturer_Name"
+F 5 "SBRD10200TR" H 5600 3350 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5600 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3200 5600 2950
+Connection ~ 5600 2950
+Wire Wire Line
+	5600 2950 6250 2950
+Wire Wire Line
+	5700 3550 5700 3750
+Wire Wire Line
+	5700 3750 5600 3750
+Wire Wire Line
+	5600 3750 5600 3550
+Wire Wire Line
+	4500 3150 4500 3750
+Wire Wire Line
+	4500 3750 5600 3750
+Connection ~ 5600 3750
+$Comp
+L Device:CP C9
+U 1 1 5FB786F9
+P 7150 3350
+F 0 "C9" H 7268 3396 50  0000 L CNN
+F 1 "330uF" H 7268 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 7188 3200 50  0001 C CNN
+F 3 "~" H 7150 3350 50  0001 C CNN
+F 4 "United Chemi-Con" H 7150 3350 50  0001 C CNN "Manufacturer_Name"
+F 5 "EMZR160ADA331MF80G" H 7150 3350 50  0001 C CNN "Manufacturer_Part_Number"
+	1    7150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3750 7150 3750
+Wire Wire Line
+	7150 3750 7150 3500
+Connection ~ 5700 3750
+Wire Wire Line
+	7150 3200 7150 2950
+Connection ~ 7150 2950
+$Comp
+L Device:C C7
+U 1 1 5FB791FB
+P 3800 3250
+F 0 "C7" H 3915 3296 50  0000 L CNN
+F 1 "100nF" H 3915 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3838 3100 50  0001 C CNN
+F 3 "~" H 3800 3250 50  0001 C CNN
+F 4 "KEMET" H 3800 3250 50  0001 C CNN "Manufacturer_Name"
+F 5 "C0805C104Z5VACTU" H 3800 3250 50  0001 C CNN "Manufacturer_Part_Number"
+	1    3800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5FB79759
+P 3350 2950
+F 0 "C6" H 3468 2996 50  0000 L CNN
+F 1 "100uF" H 3468 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 3388 2800 50  0001 C CNN
+F 3 "~" H 3350 2950 50  0001 C CNN
+F 4 "Panasonic" H 3350 2950 50  0001 C CNN "Manufacturer_Name"
+F 5 "EEV-FK2A101M" H 3350 2950 50  0001 C CNN "Manufacturer_Part_Number"
+	1    3350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5FB7A0AD
+P 2850 2950
+F 0 "C5" H 2968 2996 50  0000 L CNN
+F 1 "100uF" H 2968 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 2888 2800 50  0001 C CNN
+F 3 "~" H 2850 2950 50  0001 C CNN
+F 4 "Panasonic" H 2850 2950 50  0001 C CNN "Manufacturer_Name"
+F 5 "EEV-FK2A101M" H 2850 2950 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2800 2850 2500
+Wire Wire Line
+	2850 2500 3350 2500
+Wire Wire Line
+	3350 2800 3350 2500
+Connection ~ 3350 2500
+Wire Wire Line
+	3350 2500 3800 2500
+Wire Wire Line
+	3800 2500 3800 3100
+Connection ~ 3800 2500
+Wire Wire Line
+	3800 2500 4000 2500
+Wire Wire Line
+	2850 3100 2850 3750
+Wire Wire Line
+	2850 3750 3350 3750
+Connection ~ 4500 3750
+Wire Wire Line
+	3350 3100 3350 3750
+Connection ~ 3350 3750
+Wire Wire Line
+	3350 3750 3800 3750
+Connection ~ 3800 3750
+Wire Wire Line
+	3800 3750 4500 3750
+Wire Wire Line
+	3800 3400 3800 3750
+$Comp
+L Transistor_FET:SUD19P06-60 Q1
+U 1 1 5FB7CAD4
+P 2100 1750
+F 0 "Q1" V 2442 1750 50  0000 C CNN
+F 1 "SUD19P06-60" V 2351 1750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2295 1675 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/69253/sud19p06.pdf" H 2100 1750 50  0001 C CNN
+F 4 "Vishay" H 2100 1750 50  0001 C CNN "Manufacturer_Name"
+F 5 "SUD19P06-60-GE3" H 2100 1750 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2100 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:DZ2S120X0L D1
+U 1 1 5FB7EE17
+P 2550 2000
+F 0 "D1" V 2504 2080 50  0000 L CNN
+F 1 "DZ2S120X0L" V 2595 2080 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 2550 1825 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/content/data/SC/ds/ds4/DZ2S12000L_E.pdf" H 2550 2000 50  0001 C CNN
+F 4 "Panasonic" H 2550 2000 50  0001 C CNN "Manufacturer_Name"
+F 5 "DZ2S12000L" H 2550 2000 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2550 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FB80157
+P 2100 2400
+F 0 "R9" H 2170 2446 50  0000 L CNN
+F 1 "12K" H 2170 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2030 2400 50  0001 C CNN
+F 3 "~" H 2100 2400 50  0001 C CNN
+F 4 "Yageo" H 2100 2400 50  0001 C CNN "Manufacturer_Name"
+F 5 "RC0603JR-0712KL" H 2100 2400 50  0001 C CNN "Manufacturer_Part_Number"
+	1    2100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1950 2100 2150
+Wire Wire Line
+	2550 2150 2100 2150
+Connection ~ 2100 2150
+Wire Wire Line
+	2100 2150 2100 2250
+Wire Wire Line
+	2550 1850 2550 1650
+Wire Wire Line
+	2550 1650 2300 1650
+Wire Wire Line
+	2550 1650 3800 1650
+Wire Wire Line
+	3800 1650 3800 2500
+Connection ~ 2550 1650
+Wire Wire Line
+	4500 3850 4500 3750
+Wire Wire Line
+	2100 2650 2100 2550
+$Comp
+L power:GNDPWR #PWR018
+U 1 1 5FB84098
+P 2100 2650
+F 0 "#PWR018" H 2100 2450 50  0001 C CNN
+F 1 "GNDPWR" H 2104 2496 50  0000 C CNN
+F 2 "" H 2100 2600 50  0001 C CNN
+F 3 "" H 2100 2600 50  0001 C CNN
+	1    2100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR020
+U 1 1 5FB85499
+P 4500 3850
+F 0 "#PWR020" H 4500 3650 50  0001 C CNN
+F 1 "GNDPWR" H 4504 3696 50  0000 C CNN
+F 2 "" H 4500 3800 50  0001 C CNN
+F 3 "" H 4500 3800 50  0001 C CNN
+	1    4500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR022
+U 1 1 5FB85868
+P 7150 2200
+F 0 "#PWR022" H 7150 2050 50  0001 C CNN
+F 1 "+5V" H 7165 2373 50  0000 C CNN
+F 2 "" H 7150 2200 50  0001 C CNN
+F 3 "" H 7150 2200 50  0001 C CNN
+	1    7150 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 2200
+$Comp
+L Device:Fuse F1
+U 1 1 5FB85EBC
+P 1600 1650
+F 0 "F1" V 1403 1650 50  0000 C CNN
+F 1 "Fuse" V 1494 1650 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 1530 1650 50  0001 C CNN
+F 3 "~" H 1600 1650 50  0001 C CNN
+F 4 "Keystone" H 1600 1650 50  0001 C CNN "Manufacturer_Name"
+F 5 "3568" H 1600 1650 50  0001 C CNN "Manufacturer_Part_Number"
+	1    1600 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 1650 1900 1650
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5FB87586
+P 1000 1750
+F 0 "J3" H 918 1425 50  0000 C CNN
+F 1 "Conn_01x02" H 918 1516 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 1000 1750 50  0001 C CNN
+F 3 "~" H 1000 1750 50  0001 C CNN
+F 4 "" H 1000 1750 50  0001 C CNN "Field4"
+F 5 "Phoenix 1984015 and 1945096" H 1000 1750 50  0001 C CNN "Description"
+F 6 "Phoenix Contact" H 1000 1750 50  0001 C CNN "Manufacturer_Name"
+	1    1000 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 1650 1450 1650
+$Comp
+L power:GNDPWR #PWR017
+U 1 1 5FB88710
+P 1350 1850
+F 0 "#PWR017" H 1350 1650 50  0001 C CNN
+F 1 "GNDPWR" H 1354 1696 50  0000 C CNN
+F 2 "" H 1350 1800 50  0001 C CNN
+F 3 "" H 1350 1800 50  0001 C CNN
+	1    1350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1750 1350 1750
+Wire Wire Line
+	1350 1750 1350 1850
+$Comp
+L power:+VDC #PWR019
+U 1 1 5FB8988F
+P 3800 1650
+F 0 "#PWR019" H 3800 1550 50  0001 C CNN
+F 1 "+VDC" H 3800 1925 50  0000 C CNN
+F 2 "" H 3800 1650 50  0001 C CNN
+F 3 "" H 3800 1650 50  0001 C CNN
+	1    3800 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 1650
+$Comp
+L power:GND #PWR021
+U 1 1 5FB90A78
+P 6500 4200
+F 0 "#PWR021" H 6500 3950 50  0001 C CNN
+F 1 "GND" H 6505 4027 50  0000 C CNN
+F 2 "" H 6500 4200 50  0001 C CNN
+F 3 "" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4200 6500 4050
+Wire Wire Line
+	5700 4050 5700 3750
+Text Notes 1950 1050 0    50   ~ 0
+Designed to handle 24V
+Wire Wire Line
+	5700 4050 6500 4050
+$EndSCHEMATC
