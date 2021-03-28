@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SMPS_Regulators:LM2678 U1
+L _SMPS_Regulators:LM2678 U1
 U 1 1 5FB73DAC
 P 4800 2500
 F 0 "U1" H 4750 3065 50  0000 C CNN
